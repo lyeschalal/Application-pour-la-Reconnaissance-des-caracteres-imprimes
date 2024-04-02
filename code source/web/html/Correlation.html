@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correlation</title>
+    <link rel="stylesheet" href="../css/Correlation.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
+</head>
+
+<body>
+    <!-- <script src="../js/correlation.js"></script> -->  
+    <section class="section-0">
+        <div>
+            <a id="exit" class="dfg" onclick="window.close();"><img src="../img/error.svg" alt="sorry" style="height:30px;"></a>
+        </div>
+        <div class="container-00">
+            <a id="img_logo" onclick="window.location.replace('main.html')"><img  src="../img/logo.png" height="50px" alt="logo"></a>
+            <p > <a id="nm_app" onclick="window.location.replace('main.html')" style="text-decoration: none; color: white;">CIPHER</a></p>
+        </div>
+        </div>
+        <div style="height:30px"; >
+            
+            <img id="parametre" class="parametre relatif" src="../img/parametre.png" height="37" alt="parametre">
+            <div id="mouvement" class="mouvement">
+                <div class="positionDiv">
+                    <button class="bts" id="chiffre"> chiffre</button>
+                    <div id="div--btn1"  class="DivBouton">
+                        <div id="bouton"></div>
+                    </div>
+                    <button class="bts" id="lettre">lettre</button>
+                </div>
+                <div id='trm' class="positionDiv">
+                    <button class="bts" id="Unseul"> Un seul</button>
+                    <div id="div--btn2" class="DivBouton">
+                        <div id="bouton2"></div>
+                    </div>
+                    <button class="bts" id="plusieurs">Plusieurs</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-1">
+        <nav class="nav-bar">
+            <button class="div-nav-bar" id="corr">
+                <div class="div-nav-bar-p">
+                    <p>Correlation</p>                                                                                                                                                                              
+                    <div class="aide1">Cliquez ici pour aller a la page principale</div>
+                </div>
+                <div class="div-img"><img src="../img/loupe.png" alt="loupe"></div>
+            </button>
+            <button onclick="window.location.replace('./performances.html')" class="div-nav-bar" id="perf">
+                <div class="div-nav-bar-p">
+                    <p>Performances</p>
+                    <div class="aide2">Cliquez ici pour consulter les performances de ce logiciel</div>
+                </div>
+                <div class="div-img"><img src="../img/calculatrice.png" alt="calculatrice"></div>
+            </button>
+        </nav>
+        <div class="container-1" id="corr1">
+            <img src="" id="img_user">
+            <div id="img_user_div" class="p-div">
+                <p>Déposer votre image</p>
+                <div class="aidecorr1">Vous pouvez visualiser l'image que vous allez importer ici</div>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="div-con2">
+                <p class="Resultat" class="container2-p">Résultat</p>
+            </div>
+            <div id="affiche_num" class="container2-div" class="container2-div1">
+                <p class="container2-div1-p">Veuillez entrer une image</p>
+                <div class="aidecorr2">Le résultat de l'interprétation de votre image sera affiché ici </div>
+            </div>
+            <div class="div-con2">
+                <p class="Fiabilite" class="container2-p">Fiabilité</p>
+            </div>
+            <div class="container2-div" class="container2-div2" id="corr2">
+                <!-- le truc dur -->
+                <svg class="svg-1" width="200" height="200">
+                    <circle cx="100" cy="100" r="90" fill="transparent" stroke="rgba(0, 0, 0, 0.08)" stroke-width="5" />
+                    <circle class="circle-1" cx="100" cy="100" r="90" fill="transparent" stroke="#6C8BDD"
+                        stroke-width="5"></circle>
+                    <circle cx="100" cy="100" r="40" fill="white" stroke="white" stroke-width="10"
+                        style="filter: drop-shadow(0px 0px 30px rgba(108, 139, 221));"></circle>
+                    <text class="fiabilite" fill="#6C8BDD" x="103" y="103" text-anchor="middle"
+                        alignment-baseline="middle" style="font-size:30px"></text>
+
+                </svg>
+                <div class="aidecorr3"> Ce pourcentage représente le coefficient max obtenu lors du traitement
+                    de votre image </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+    <section class="section2">
+        <ul class="ul-seaction-2">
+            <button>
+                <li class="li1" id="import_bt">
+                    <p class="importerimg">importer image</p>
+                    <div class="aidecorr4"> Cliquez Ici pour importer une image </div>
+                </li>
+            </button>
+
+            <!-- <button><a id="affiche_etape" href="affiche_etape.html"><li class="li2"><p class="scanneimg">scanner image</p></li></a></button> -->
+            <button><a id="affiche_etape">
+                    <li class="li2">
+                        <p class="scanneimg">Afficher les étapes</p>
+                        <div class="aidecorr5"> Cliquez Ici pour visualiser les étapes de traitement de votre image
+                        </div>
+                    </li>
+                </a>
+            </button>
+
+        </ul>
+    </section>
+    <section id="section3">
+        <section id="section_3_1">
+            <div></div>
+            <div class="sec_3_txt">Traitement d'image</div>
+            <img id="sec3_img1" height="50px" src="../img/icone_fermer.png" alt="fermer">
+        </section>
+        <section id="section_3_2">
+            <div class="div_section_3_2">
+                <div id="sec_3_2_txt1" class="sec_3_2_txt1">1</div>
+                <div id="sec_3_2_txt2" class="sec_3_2_txt2">Transformation en Noir&Blanc</div>
+                <div></div>
+            </div>
+            <div class="div_section_3_2">
+                <div id="div_fleche_y"><button class="sec_3_2_next" id="sec_3_2_previous">
+                        <div id="fleche_y">&larr;</div>
+                    </button></div>
+                <div style="display: flex; justify-content: center;">
+                    <div class="sec_3_2_img1">
+                        <div id="div_img"></div><img id="sec_3_2_img1" src="../img/img_user_N&b.png" height="300px" style="max-width: 450px ;">
+                    </div>
+                </div>
+                <div id="div_fleche_x"><button class="sec_3_2_next" id="sec_3_2_next">
+                        <div id="fleche_x">&rarr;</div>
+                    </button></div>
+            </div>
+        </section>
+    </section>
+
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="../js/correlation.js"></script>
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

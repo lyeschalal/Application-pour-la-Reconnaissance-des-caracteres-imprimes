@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performances</title>
+    <link rel="stylesheet" href="../css/performances.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
+</head>
+
+<body>
+
+    <section class="section-0">
+        <div>
+            <a class="dfg" onclick="window.close()"><img src="../img/error.svg" alt="sorry" style="height:30px;"></a>
+        </div>
+        <div class="container-00">
+            <a id="img_logo" onclick="window.location.replace('./main.html')"><img src="../img/logo.png" height="50px" alt="logo"></a>
+            <a id="nm_app" onclick="window.location.replace('./main.html')"><p>CIPHER</p></a>
+        </div>
+        <div></div>
+    </section>
+    <section class="section-1">
+        <nav class="nav-bar">
+            <button  onclick="window.location.replace('../html/Correlation.html');" class="div-nav-bar" id="corr">
+                <div class="div-nav-bar-p">
+                    <p >Correlation</p>
+                    <div class="aide1">Cliquez ici pour aller a la page principale</div>
+                </div>
+                <div class="div-img"><img src="../img/loupe.png" alt="loupe"></div>
+            </button>
+            <button class="div-nav-bar" id="perf">
+                <div class="div-nav-bar-p">
+                    <p>Performances</p>
+                    <div class="aide2">Cliquez ici pour consulter les performances de ce logiciel</div>
+                </div>
+                <div class="div-img"><img src="../img/calculatrice.png" alt="calculatrice"></div>
+            </button>
+        </nav>
+    </section>
+    <section class="section-2">
+        <div class="sectionContainer">
+            <div id="TE" class="onesec">
+                <h1 class="textSect"> Taux d'erreur</h1>
+                <div class="pourcentageContainer">
+                    <div class="box">
+                        <div class="pourcentage">
+                            <!--Ici le cercle du pourcentage-->
+                            <svg class="svg-2" width="315" height="300">
+                                <circle cx="154" cy="142" r="130" fill="transparent" stroke="rgba(0, 0, 0, 0.08)"
+                                    stroke-width="10" />
+                                <circle class="circle-2" cx="154" cy="142" r="130" fill="transparent" stroke="#6C8BDD"
+                                    stroke-width="10" />
+                                <circle cx="154" cy="142" r="70" fill="white" stroke="white" stroke-width="10"
+                                    style="filter: drop-shadow(0px 0px 30px rgba(108, 139, 221));"></circle>
+                                <text class="taux-derreur" fill="#6C8BDD" x="155" y="148" text-anchor="middle"
+                                    alignment-baseline="middle"></text>
+                            </svg>
+                        </div>
+                        <div class="aidePerf1"> Ce pourcentage a été obtenu à partir d'un test de reconnaissance sur
+                            1200 images
+                            tout en comptant
+                            le nombre de fois où le résultat n'était pas le bon</div>
+                    </div>
+                </div>
+            </div>
+            <div id="FN" class="onesec">
+                <h1 class="textSect"> Faux negatifs</h1>
+                <div class="pourcentageContainer">
+                    <div class="box">
+                        <div class="pourcentage">
+                            <!--Ici le cercle du pourcentage-->
+                            <svg class="svg-3" width="315" height="300">
+                                <circle cx="154" cy="142" r="130" fill="transparent" stroke="rgba(0, 0, 0, 0.08)"
+                                    stroke-width="10" />
+                                <circle class="circle-3" cx="154" cy="142" r="130" fill="transparent" stroke="#6C8BDD"
+                                    stroke-width="10" />
+                                <circle cx="154" cy="142" r="70" fill="white" stroke="white" stroke-width="10"
+                                    style="filter: drop-shadow(0px 0px 30px rgba(108, 139, 221));"></circle>
+                                <text class="faux-negatifs" fill="#6C8BDD" x="155" y="148" text-anchor="middle"
+                                    alignment-baseline="middle"></text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="aidePerf2"> Un faux négatif est lorsque l'algorithme ne considère pas le chiffre
+                        représenté
+                        sur l'image car le résultat de son interprétation est inférieur au seuil déterminé.<br>
+                    </div>
+                </div>
+            </div>
+            <div id="FP" class="onesec">
+                <h1 class="textSect"> Faux positifs </h1>
+                <div class="pourcentageContainer">
+                    <div class="box">
+                        <div class="pourcentage">
+                            <!--Ici le cercle du pourcentage-->
+                            <svg class="svg-4" width="315" height="300">
+                                <circle cx="154" cy="142" r="130" fill="transparent" stroke="rgba(0, 0, 0, 0.08)"
+                                    stroke-width="10" />
+                                <circle class="circle-4" cx="154" cy="142" r="130" fill="transparent" stroke="#6C8BDD"
+                                    stroke-width="10" />
+                                <circle cx="154" cy="142" r="70" fill="white" stroke="white" stroke-width="10"
+                                    style="filter: drop-shadow(0px 0px 30px rgba(108, 139, 221));"></circle>
+                                <text class="fauxpositifs" fill="#6C8BDD" x="155" y="148" text-anchor="middle"
+                                    alignment-baseline="middle"></text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="aidePerf3"> Un faux positive est lorsque l'algorithme considère des lettres / caractère
+                        entrées par les images importées comme étant des chiffres.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="../js/performances.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <script type='text/javascript' src="/eel.js"></script>
+</body>
+
+</html>

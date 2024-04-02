@@ -1,0 +1,161 @@
+@font-face {
+    src: url("../font/Helvetica.ttf");
+    font-family: Helvetica;
+}
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dfg{
+    position: absolute;
+    top: 1vh;
+    right: 1vh;
+    cursor: pointer;
+}
+
+.mainBody {
+    display: grid;
+    grid-template-columns: 30% 65% 5%;
+    /* position: fixed; */
+
+
+
+}
+img{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+.container-00 img {
+    /* padding-top: 80px; */
+    margin: 70px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    left: 844px;
+    top: 327px;
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.container {
+    margin-right: 160px;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+
+.li1 {
+    padding: 10px;
+    width: 180px;
+    height: 40px;
+    background: #F5A064;
+    border: 1px solid #302B27;
+    box-sizing: border-box;
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.ul-seaction-2 {
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+
+}
+
+.buttona button {
+    cursor: pointer;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    top: calc(50% - 63px/2 + 170.5px);
+    background: #F5A064;
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.div_h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@media screen and (max-width : 900px) {
+
+    .div_h1 {
+        white-space: normal;
+        overflow: auto;
+        text-overflow: clip;
+        text-align: center;
+    }
+}
+
+.buttona {
+    justify-content: center;
+}
+
+.buttona div {
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+
+}
+
+.aide1 {
+    color: white;
+    height: fit-content;
+    width: 250px;
+    padding: 10px;
+    background-color: #6c8bdd;
+    border-radius: 10px;
+    display: none;
+    position: relative;
+    top: -30px;
+    left: 200px;
+}
+
+.aide2 {
+    color: white;
+    height: fit-content;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6c8bdd;
+    position: relative;
+    display: none;
+    top: -30px;
+    left: 200px;
+}

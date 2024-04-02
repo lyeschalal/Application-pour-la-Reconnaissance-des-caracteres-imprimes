@@ -1,0 +1,152 @@
+@font-face {
+    src: url("../font/Helvetica.ttf");
+    font-family: Helvetica;
+  }
+
+* {
+    font-family: Helvetica;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+}
+.section1{
+    position:absolute;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1fr 3.5fr;
+
+}
+.container{
+
+display: flex;
+height: 400px;
+flex-direction: column;
+align-items: center;
+padding: 50px;
+}
+.imgfond{
+    opacity:0.7;
+    height: 100%;
+    width: 100%;
+}
+/* .container-0{
+    position:absolute;
+    Width:723px;
+    Height:531px;
+    Top:166px;
+    Padding:235px, 300px, 235px, 300px;
+    Gap:10px;
+    justify-content: center;
+    border-radius:20px;
+    border-color:#F5A064;
+
+
+} */
+/* .nav{
+    position:absolute;
+    color:#F5A064;
+    border-color:#F5A064;
+    background-color: black;
+    justify-content: right;
+    height: 63px;
+    width: 301px;
+    left: 790px;
+    top: 907px;
+    border-radius: 20px;
+    padding: 10px;
+
+} */
+
+
+.container-1{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 6fr 1.5fr;
+}
+.container-1-1{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.text{
+    color: #6C8BDD;
+    font-size:45px;
+    font-style: 700,bold;
+    /* font-family:"Helvetica Rounded"; */
+    font-weight: 700, Bold;    
+} 
+.container-0{
+display: flex;
+height: 500px;
+width: 600px;
+justify-content: center;
+align-items: center;
+overflow-y: scroll;
+overflow-x: hidden;
+border-radius: 10px;
+background-color:#F5A064 ;
+}
+.container-0-7{
+
+    display: flex;
+    /* height: 400px; */
+    /* width: 600px; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#F5A064 ;
+    }
+.buttona{
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    top: calc(50% - 63px/2 + 170.5px);
+    background: #F5A064;
+    box-shadow: 1px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+}   
+.buttona {
+    justify-content: center;
+}
+
+.buttona div {
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+
+} 
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* .h{
+    height: 43px;
+    width: 111px;
+    left: 95px;
+    top: 10px;
+    border-radius: nullpx;
+
+} */
+a:hover{
+    text-decoration: underline;
+}
+/* @font-face{
+    font-family:'Helvetica Rounded';
+    src: url('Helvetica-Rounded.eot') format('eot'),
+
+} */
+@media screen and (max-width : 1200px ) {
+    
+    .section1{
+        
+        grid-template-columns: auto auto;
+    
+    }
+}
